@@ -8,7 +8,7 @@ This repository contains the supporting course material for our [Linux Rootkits 
 
 **The entire video course is available online:  [Linux Rootkits for Red-Blue Teams][1] on  [Pentester Academy][2]**
 
-Linux dominates the Server, Embedded and now the Internet of Things (IoT) device market. In recent times, embedded systems and IoT devices in particular have been the weapons of choice in online attacks: botnets like Mirai and Reaper to name a few. Soon the simple attack vectors that these botnets and malware use get patched, it is obvouis that the attacker will move and hide his tools in Kernel mode. This course will teach Red-Blue teams how kernel mode attack kits work and what to go about protecting their systems against it. We will use examples on x86_64, ARM and MIPS based architectures.
+Linux dominates the Server, Embedded and now the Internet of Things (IoT) device market. In recent times, embedded systems and IoT devices in particular have been the weapons of choice in online attacks: botnets like Mirai and Reaper to name a few. Soon the simple attack vectors that these botnets and malware use get patched, it is obvouis that the attacker will move and hide his tools in Kernel mode. This course will teach Red-Blue teams how kernel mode attack kits work and what to go about protecting their systems against it. We will use examples on **x86_64, ARM and MIPS based architectures**.
 
 This entire course will be run on the latest Linux Kernel 4.15.x. This course is completely hands-on and everything will be taught with practical examples in the form of Kernel Modules written in C. You can however follow this course with a basic knowledge of Linux as we discuss everything from the very basics.
 
