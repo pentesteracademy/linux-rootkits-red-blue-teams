@@ -49,7 +49,11 @@ static void __exit lkm_exit(void) {
 
 	pr_info("Wow! You exited early\n");
 
-	iamhere("exiting");
+	pr_info("Param 1 on exit: Counter %d\n", counter);
+	pr_info("Param 2 on exit: Message: %s\n", message);
+
+
+
 }
 
 module_init(lkm_init);
