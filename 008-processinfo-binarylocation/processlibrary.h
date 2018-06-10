@@ -120,6 +120,8 @@ static inline int print_task_binary_name(struct task_struct *tsk) {
 
 			pr_info("Binary Path: %s\n", binary_path);
 
+			kfree(temp_path);
+
 		}
 		else {
 			pr_info("Binary Path: (none)\n");
