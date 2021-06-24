@@ -105,7 +105,8 @@ static inline int print_task_binary_name(struct task_struct *tsk) {
 	if(NULL != tsk->mm) {
 
 		// hold memory map semaphore with read bias 
-		down_read(&tsk->mm->mmap_sem);
+		// mmap_sem has now been renamed to mmap_lock in recent versions of the kernel
+		down_read(&tsk->mm->mmap_lock);
 
 		if(NULL != tsk->mm->exe_file) {
 	
@@ -128,7 +129,7 @@ static inline int print_task_binary_name(struct task_struct *tsk) {
 		}
 
 		// release memory map semaphore 
-		up_read(&tsk->mm->mmap_sem);
+		up_read(&tsk->mm->mmap_lock);
 		
 	}else{
 		pr_info("target_process->mm is NULL - Kernel thread?\n");
